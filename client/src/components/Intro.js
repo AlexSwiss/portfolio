@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import { makeStyles } from '@material-ui/core/styles';
-import { Avatar, Chip, Typography } from '@material-ui/core';
+import { Avatar, Chip, Typography, Link } from '@material-ui/core';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
@@ -12,28 +12,32 @@ const useStyles = makeStyles((theme) => ({
     root: {
       '& > *': {
         margin: theme.spacing(1),
-        alignItems: 'center'
+        alignItems: 'center',
       },
     },
     image: {
-      width: theme.spacing(25),
-      height: theme.spacing(25),
-      marginTop: "3vh",
-      alignItems: 'center'
+      width: theme.spacing(20),
+      height: theme.spacing(20),
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+      marginLeft: "80px"
     },
     name: {
-        alignItems: 'center'
+        textAlign: 'center',
+        fontSize: "50px"
     },
     about: {
-        alignItems: 'center',
         color: 'gray',
-        justifyItems: 'center'
+        marginLeft: "10px",
+        fontSize: "20px",
+        textAlign: 'center'
     },
     social: {
       marginTop: "3vh",
       fontSize: "30px",
       marginLeft: "15px",
-      alignItems: 'center'
+      alignItems: 'right'
 
     },
     tech: {
@@ -58,7 +62,7 @@ const Intro = (props) => {
         </Row>
         <Row>
             <Col sm="4"></Col>
-            <Col sm="4" className={classes.name}>
+            <Col sm="4" className={classes.name} fontSize="40px">
                 <Typography variant="h4" gutterBottom>
                     Alexander
                 </Typography>
@@ -69,7 +73,7 @@ const Intro = (props) => {
         <Row>
             <Col sm="3"></Col>
             <Col sm="6" className={classes.about}>
-                <Typography variant="h6" gutterBottom>
+                <Typography gutterBottom>
                     Hello <br/>
                     I am a Golang Backend engineer and i am passionate about solving problems
                 </Typography>
@@ -78,8 +82,8 @@ const Intro = (props) => {
         </Row>
         <Row>
         <Col sm="3"></Col>
-        <Col sm="6">
-        <Chip label="Golang"  className={classes.tech} />
+        <Col sm="6" style={{marginLeft: '76px'}}>
+            <Chip label="Golang"  className={classes.tech} />
             <Chip label="Node.js"  className={classes.tech} />
             <Chip label="Express"  className={classes.tech} />
             <Chip label="Gqlgen"  className={classes.tech} />
@@ -89,11 +93,16 @@ const Intro = (props) => {
         </Row>
         <Row>
             <Col sm="4"></Col>
-            <Col sm="4">
-                <TwitterIcon className={classes.social}/>
-                <GitHubIcon className={classes.social}/>
-                <LinkedInIcon className={classes.social} />
-                <MailIcon className={classes.social} />
+            <Col sm="4" style={{marginLeft: '76px'}}>
+                <Link href="https://twitter.com/CodedFingers" color="inherit">
+                    <TwitterIcon className={classes.social}/>
+                </Link>
+                <Link href="https://github.com/AlexSwiss" color="inherit">
+                    <GitHubIcon className={classes.social}/>
+                </Link>
+                <Link href="https://linkedin.com/In/alexowi" color="inherit">
+                    <LinkedInIcon className={classes.social} />
+                </Link>
             </Col>
             <Col sm="4"></Col>
         </Row>
