@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link} from 'react-router-dom';
 import {
   Collapse,
   Navbar,
@@ -21,14 +22,19 @@ const AppNav = (props) => {
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
-            <NavItem>
-              <NavLink href="/components/">Resume</NavLink>
+          <NavItem>
+              <NavLink tag={Link} to="/" activeClassName="active">Home</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="https://github.com/reactstrap/reactstrap">Projects</NavLink>
+              <NavLink tag={Link} to="/resume" activeClassName="active">Resume</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink tag={Link} to="/projects" activeClassName="active">Projects</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink tag={Link} to="/articles" activeClassName="active">Articles</NavLink>
             </NavItem>
           </Nav>
-          <NavbarText>Contact</NavbarText>
         </Collapse>
       </Navbar>
     </div>

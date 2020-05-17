@@ -5,8 +5,8 @@ import { Avatar, Chip, Typography, Link } from '@material-ui/core';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
-import MailIcon from '@material-ui/icons/Mail';
 import image from '../images/avatar1.JPEG';
+import AppNav from './Navbar';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -54,6 +54,7 @@ const Intro = (props) => {
 
   return (
     <div>
+        <AppNav/>
         <Container className={classes.root}>
         <Row>
             <Col sm="4"></Col>
@@ -65,6 +66,7 @@ const Intro = (props) => {
             <Col sm="4" className={classes.name} fontSize="40px">
                 <Typography variant="h4" gutterBottom>
                     Alexander
+                    <p><h6>alexyikeh@gmail.com</h6></p>
                 </Typography>
             </Col>
             <Col sm="4"></Col>
@@ -84,6 +86,7 @@ const Intro = (props) => {
         <Col sm="3"></Col>
         <Col sm="6" style={{marginLeft: '76px'}}>
             <Chip label="Golang"  className={classes.tech} />
+            <Chip label="Javascript"  className={classes.tech} />
             <Chip label="Node.js"  className={classes.tech} />
             <Chip label="Express"  className={classes.tech} />
             <Chip label="Gqlgen"  className={classes.tech} />
@@ -94,15 +97,17 @@ const Intro = (props) => {
         <Row>
             <Col sm="4"></Col>
             <Col sm="4" style={{marginLeft: '76px'}}>
-                <Link href="https://twitter.com/CodedFingers" color="inherit">
-                    <TwitterIcon className={classes.social}/>
-                </Link>
-                <Link href="https://github.com/AlexSwiss" color="inherit">
+
+                <a target="_blank" href="https://github.com/AlexSwiss">
                     <GitHubIcon className={classes.social}/>
-                </Link>
-                <Link href="https://linkedin.com/In/alexowi" color="inherit">
+                </a>
+                <a target="_blank" href="https://linkedin.com/In/alexowi" color="inherit">
                     <LinkedInIcon className={classes.social} />
-                </Link>
+                </a>
+                <a target="_blank" href="https://twitter.com/CodedFingers">
+                    <TwitterIcon className={classes.social}/>
+                </a>
+
             </Col>
             <Col sm="4"></Col>
         </Row>
