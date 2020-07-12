@@ -30,6 +30,45 @@ const Projects = (props) => {
       <AppNav/>
       <Container>
       <Container><h3>Some of my projects..</h3></Container>
+
+      <Container className={classes.project}>
+        <Row>
+            <h4>Todo Microservice</h4>
+        </Row>
+        <Row>
+        <InfoIcon />&nbsp; &nbsp;<h6>A todo app microservice built with grpc and protobuf with mysql as the database</h6>
+        </Row>
+        <Row>
+            <KeyboardIcon />&nbsp; &nbsp;<h6> Golang, gRPC, MySQL, Protobuf, Docker</h6>
+        </Row>
+        <Row>
+          <LinkIcon />&nbsp; &nbsp;
+          <Typography>
+            <a target="_blank" href="https://github.com/AlexSwiss/todo-microservice">View Project</a>
+          </Typography>
+        </Row>
+        <hr />
+      </Container>
+
+      <Container className={classes.project}>
+        <Row>
+            <h4>Glofox-task</h4>
+        </Row>
+        <Row>
+        <InfoIcon />&nbsp; &nbsp;<h6>A SaaS RESTful API platform for a studio manager to create classes and gets bookings from clients</h6>
+        </Row>
+        <Row>
+            <KeyboardIcon />&nbsp; &nbsp;<h6> Golang, Gorilla Mux, Http router</h6>
+        </Row>
+        <Row>
+          <LinkIcon />&nbsp; &nbsp;
+          <Typography>
+            <a target="_blank" href="https://github.com/AlexSwiss/glofox_task">View Project</a>
+          </Typography>
+        </Row>
+        <hr />
+      </Container>
+
       <Container className={classes.project}>
       <hr />
         <Row>

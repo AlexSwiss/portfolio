@@ -89,7 +89,7 @@ const Resume = (props) => {
       <Container className={classes.job}><h3>Skills</h3></Container>
       <Container className={classes.job}>
         <h5>Languages and Runtimes
-          <h6>Golang, Vanilla Javascript, Node.js, Javascript, Bash</h6>
+          <h6>Golang, Node.js, Javascript, Bash</h6>
         </h5>
       </Container>
       <Container className={classes.job}>
@@ -103,10 +103,16 @@ const Resume = (props) => {
         </h5>
         <hr />
       </Container>
+      <Container className={classes.job}>
+        <h5>Other technilogies
+          <h6>AWS, Kubernetes, gRPC, CI/CD, Redis, Protobuf </h6>
+        </h5>
+        <hr />
+      </Container>
       <Container className={classes.job}><h3>Education</h3></Container>
       <Container>
         <h5>
-          <h6>B.Sc Physics (Federal University Makurdi, Nigeria)</h6>
+          <h6>B.Sc Physics</h6>
         </h5>
       </Container>
       </Container>

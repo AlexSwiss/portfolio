@@ -77,7 +77,7 @@ const Intro = (props) => {
             <Col sm="6" className={classes.about}>
                 <Typography gutterBottom>
                     Hello <br/>
-                    I am a Golang Backend engineer and i am passionate about solving problems
+                    I am a Software engineer and i am passionate about solving problems
                 </Typography>
             </Col>
             <Col sm="3"></Col>
@@ -86,11 +86,11 @@ const Intro = (props) => {
         <Col sm="3"></Col>
         <Col sm="6" style={{marginLeft: '76px'}}>
             <Chip label="Golang"  className={classes.tech} />
-            <Chip label="Javascript"  className={classes.tech} />
             <Chip label="Node.js"  className={classes.tech} />
-            <Chip label="Express"  className={classes.tech} />
-            <Chip label="Gqlgen"  className={classes.tech} />
-            <Chip label="Graphql"  className={classes.tech} />
+            <Chip label="gRPC"  className={classes.tech} />
+            <Chip label="Docker"  className={classes.tech} />
+            <Chip label="CI/CD"  className={classes.tech} />
+            <Chip label="AWS"  className={classes.tech} />
         </Col>
         <Col sm="3"></Col>
         </Row>
